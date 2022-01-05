@@ -1,5 +1,6 @@
 import React from 'react'
 import PageTitle from '../../components/layout/PageTitle'
+import SectionTitle from '../../components/layout/SectionTitle';
 
 const UseRef = (props) => {
     return (
@@ -8,6 +9,7 @@ const UseRef = (props) => {
                 title="Hook UseRef"
                 subtitle="Retorna um objeto mutável com a propriedade .current!"
             />
+            <SectionTitle title="Exercise - 03" />
         </div>
     )
 }

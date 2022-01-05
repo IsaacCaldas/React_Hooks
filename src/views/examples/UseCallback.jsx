@@ -1,5 +1,6 @@
 import React from 'react'
 import PageTitle from '../../components/layout/PageTitle'
+import SectionTitle from '../../components/layout/SectionTitle';
 
 const UseCallback = (props) => {
     return (
@@ -8,6 +9,7 @@ const UseCallback = (props) => {
                 title="Hook UseCallback"
                 subtitle="Retorna uma função memoizada!"
             />
+            <SectionTitle title="Exercise - 05" />
         </div>
     )
 }

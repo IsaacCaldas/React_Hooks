@@ -1,5 +1,6 @@
 import React from 'react'
 import PageTitle from '../../components/layout/PageTitle'
+import SectionTitle from '../../components/layout/SectionTitle';
 
 const UseMemo = (props) => {
     return (
@@ -8,6 +9,7 @@ const UseMemo = (props) => {
                 title="Hook UseMemo"
                 subtitle="Retorna um valor memoizado!"
             />
+            <SectionTitle title="Exercise - 04" />
         </div>
     )
 }

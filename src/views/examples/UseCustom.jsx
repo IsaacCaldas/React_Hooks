@@ -1,5 +1,6 @@
 import React from 'react'
 import PageTitle from '../../components/layout/PageTitle'
+import SectionTitle from '../../components/layout/SectionTitle';
 
 const UseRef = (props) => {
     return (
