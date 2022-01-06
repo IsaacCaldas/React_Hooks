@@ -5,6 +5,7 @@ import SectionTitle from '../../components/layout/SectionTitle';
 function sum(a, b) {
 	const future = Date.now + 2000;//ms
 	// 	while(Date.now < future){}//espera 2s
+	/* Está comentado a linha de cima, porque está travando o navegador */
 	return a + b;
 }
 
