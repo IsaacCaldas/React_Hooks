@@ -2,6 +2,13 @@
     font-family: 'Poppins';
     src: url('./fonts/Poppins-Regular.ttf');
 }
+
+/*
+ Template string =  ``
+ Interrogação = ?
+ Barra reta = ||
+
+*/
   
 * {
 font-family: 'Poppins', Helvetica, Arial, sans-serif; 
