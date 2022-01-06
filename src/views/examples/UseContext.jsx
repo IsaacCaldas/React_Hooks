@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import { useEffect } from 'react/cjs/react.development';
 import PageTitle from '../../components/layout/PageTitle';
 import SectionTitle from '../../components/layout/SectionTitle';
 
