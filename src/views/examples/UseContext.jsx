@@ -1,8 +1,10 @@
 import React, { useContext } from 'react';
+import { useEffect } from 'react/cjs/react.development';
 import PageTitle from '../../components/layout/PageTitle';
 import SectionTitle from '../../components/layout/SectionTitle';
 
 import DataContext from '../../data/DataContext';
+import { AppContext } from '../../data/Store';
 
 const UseContext = (props) => {
 
@@ -20,6 +22,8 @@ const UseContext = (props) => {
 			name: newName
 		});
 	}
+	// Store.jsx
+	const {number, title, name, setNumber } = useContext(AppContext);
 
 	return (
 		<div className="UseContext">
@@ -39,8 +43,19 @@ const UseContext = (props) => {
 				</div>
 
 				<div>
-					<span className="text">Digite um novo nome:</span>
+					<span className="text">Digite um novo nome: </span>
 					<input type="text" className="input" onChange={e => modName(e.target.value)}/>
+				</div>
+			</div>
+
+			<SectionTitle title="Exercise useContext - 02" />
+			<div className="center">
+				<span className="text">{title}</span>
+				<span className="text">{name}</span>
+				<span className="text">{number}</span>
+				<div>
+					<button className="btn" onClick={() => setNumber(number -1)}>-1</button>
+					<button className="btn" onClick={() => setNumber(number +1)}>+1</button>
 				</div>
 			</div>
 		</div>
