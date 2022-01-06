@@ -1,9 +1,9 @@
 import React from "react";
 
 export const data = {
+  title: 'Context API.',
   name: 'apple',
-  number: 123,
-  text: 'Context API.',
+  number: 0,
 }
 
 export const DataContext = React.createContext(null);

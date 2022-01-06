@@ -6,7 +6,20 @@ import DataContext from '../../data/DataContext';
 
 const UseContext = (props) => {
 
-	const context = useContext(DataContext);
+	const {state, setState} = useContext(DataContext);
+
+	function addNumber(delta){
+		setState({
+			...state,
+			number: state.number + delta
+		});
+	}
+	function modName(newName){
+		setState({
+			...state,
+			name: newName
+		});
+	}
 
 	return (
 		<div className="UseContext">
@@ -16,9 +29,19 @@ const UseContext = (props) => {
 			/>
 			<SectionTitle title="Exercise useContext - 01" />
 			<div className="center">
-				<span className="text">{context.name}</span>
-				<span className="text">{context.text}</span>
-				<span className="text">{context.number}</span>
+				<span className="text"><strong>{state.title}</strong></span>
+				<span className="text">{state.name}</span>
+				<span className="text">{state.number}</span>
+
+				<div>
+					<button className="btn" onClick={() => addNumber(-1)}>-1</button>
+					<button className="btn" onClick={() => addNumber(+1)}>+1</button>
+				</div>
+
+				<div>
+					<span className="text">Digite um novo nome:</span>
+					<input type="text" className="input" onChange={e => modName(e.target.value)}/>
+				</div>
 			</div>
 		</div>
 	)
